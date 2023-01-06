@@ -22,14 +22,64 @@ header,
 .quote,
 .call,
 footer {
-    padding: 0 15%;
+    padding: 0 18%;
+}
+
+p {
+    line-height: 1em;
+    margin: 0;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    margin: 0;
+    padding: 0;
+}
+
+h1,
+h3 {
+    color:#F9FAF8;
+}
+
+.description-text p,
+header li {
+    font-size: 18px;
+    color: #E5E7EB;
+}
+
+.info-header,
+.quote-text p {
+    font-size: 36px;
+    color: #1F2937;
+}
+
+button {
+    background-color: #3882F6;
+    color: white;
+    border: 1px solid #3882F6;
+    border-radius: 5px;
+    padding: 10px 30px;
+}
+
+.bordered-button {
+    border: 1px solid white;
+    align-self: center;
 }
 
 header {
     background-color: #1f2937;
     display: flex;
     justify-content: space-between;
+    align-items: center;
     flex: 1 0 60px;
+}
+
+header h3 {
+    font-size: 24px;
 }
 
 ul {
@@ -49,6 +99,11 @@ main {
     flex: 1;
 }
 
+main h1 {
+    font-size: 48px;
+    font-weight: bolder;
+}
+
 .description {
     background-color: #1f2937;
     display: flex;
@@ -56,11 +111,16 @@ main {
 
 .description-text,
 .description-image {
-    padding: 40px 0;
+    padding: 80px 0;
 }
 
 .description-text {
     flex:1;
+    padding-right: 5%;
+}
+
+.description-text p {
+    margin-bottom: 15px;
 }
 
 .description-image_container {
@@ -68,19 +128,21 @@ main {
 }
 
 .description-image {
-    min-height: 100%;
+    max-height: 376px;
+    width: 100%;
 }
 
 .info-header {
-    padding: 20px 0;
+    font-weight: bolder;
+    padding: 30px 0;
     text-align: center;
 }
 
 .cards {
     display: flex;
     text-align: center;
-    padding: 0 100px 40px;
-    gap: 40px;
+    padding: 0 100px 80px;
+    gap: 33px;
 }
 
 .card {
@@ -88,36 +150,62 @@ main {
 }
 
 .card-image {
-    min-height: 65%;
+    height: 65%;
+    width: 100%;
+    border: 3px solid #3882F6;
+    border-radius: 10px;
 }
 
 .quote {
     display: flex;
     flex-direction: column;
     background-color: #e5e7eb;
+    margin: 0;
 }
 
-.quote-text{
-    padding: 40px 100px 0;
+.quote-text {
+    padding: 40px 60px 0;
+    margin: 0;
+}
+
+.quote-text p {
+    font-weight: lighter;
+    font-style: italic;
 }
 
 .quote-caption {
     padding: 0 100px 40px;
     align-self: flex-end;
+    margin: 0;
 }
 
 .call-container {
     display: flex;
     background-color: #3882f6;
     margin: 60px 0;
-    padding: 40px 100px;
+    border: 1px solid #3882f6;
+    border-radius: 5px;
+    padding: 40px 60px;
     justify-content: space-between;
+}
+
+.call-content p {
+    color: white;
+}
+
+.call-text {
+    font-size: 12px;
+    font-weight: lighter;
 }
 
 footer {
     display: flex;
-    background-color: #1f2937;;
+    background-color: #1f2937;
     justify-content: center;
     align-items: center;
     flex: 1 0 60px;
+}
+
+small {
+    color: white;
 }
