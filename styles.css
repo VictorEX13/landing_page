@@ -1,0 +1,123 @@
+html {
+    box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: inherit;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    font-family: Roboto, sans-serif;
+    margin: 0;
+    min-height: 100vh;
+}
+
+header,
+.description,
+.info,
+.quote,
+.call,
+footer {
+    padding: 0 15%;
+}
+
+header {
+    background-color: #1f2937;
+    display: flex;
+    justify-content: space-between;
+    flex: 1 0 60px;
+}
+
+ul {
+    display: flex;
+    list-style-type: none;
+    gap: 16px;
+}
+
+li {
+    padding: 0;
+    margin: 0;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+}
+
+.description {
+    background-color: #1f2937;
+    display: flex;
+}
+
+.description-text,
+.description-image {
+    padding: 40px 0;
+}
+
+.description-text {
+    flex:1;
+}
+
+.description-image_container {
+    flex: 1;
+}
+
+.description-image {
+    min-height: 100%;
+}
+
+.info-header {
+    padding: 20px 0;
+    text-align: center;
+}
+
+.cards {
+    display: flex;
+    text-align: center;
+    padding: 0 100px 40px;
+    gap: 40px;
+}
+
+.card {
+    height: 200px;
+}
+
+.card-image {
+    min-height: 65%;
+}
+
+.quote {
+    display: flex;
+    flex-direction: column;
+    background-color: #e5e7eb;
+}
+
+.quote-text{
+    padding: 40px 100px 0;
+}
+
+.quote-caption {
+    padding: 0 100px 40px;
+    align-self: flex-end;
+}
+
+.call-container {
+    display: flex;
+    background-color: #3882f6;
+    margin: 60px 0;
+    padding: 40px 100px;
+    justify-content: space-between;
+}
+
+footer {
+    display: flex;
+    background-color: #1f2937;;
+    justify-content: center;
+    align-items: center;
+    flex: 1 0 60px;
+}
